@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Link Fuente del Menu-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <!-- Link fuente del h1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- Link fuente TituloMain -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
+
+    <title>Blog</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <a href="../index.html"><img class="imgIndex" src="../img/treno.png" alt="Logo de treno"></a>
+            <h1>TRENO</h1>
+            
+            <nav>
+                <ul>
+                    <li class="botonAnimation"><a href="../index.html">Inicio</a></li>
+                    <li class="botonAnimation"><a href="../pages/blog.html">Blog</a></li>
+                    <li class="botonAnimation"><a href="../pages/actividades.html">Actividades</a></li>
+                    <li class="botonAnimation"><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li class="botonAnimation">Contacto</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="mainColumn">
+            <div class="mainContacto1">
+                <legend class="legend">Informacion de contacto</legend>
+                <p class="formulario"><strong>Nuestro telfono:</strong> +54 9 2236691462</p>
+                <p class="formulario"><Strong>Nuestro E-mail:</Strong> treno.gym@gmail.com</p>
+                <legend class="legend">Direccion:</legend>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6289.368195002173!2d-57.557414!3d-37.984501!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d9576846afb7%3A0x13594050a82f4a24!2sSan%20Juan%20872%2C%20B7600BUR%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1652206686481!5m2!1ses-419!2sar" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="mainContacto2">
+                <form class="formulario">
+                    <legend class="legend">Por dudas, consultas o sugerencias</legend>
+                    <div class="divForm">
+                        <label for="nombre">Nombre y Apellido:</label>
+                        <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="divForm">
+                        <label for="mail">E-mail:</label>
+                        <input type="mail" name="mail" placeholder="Ingresa tu email">
+                    </div>
+                    <div class="divForm">
+                        <label for="sexo">Sexo:</label>
+                        <input type="radio" name="sexo" value="h"> Hombre
+                        <input type="radio" name="sexo" value="m"> Mujer
+                    </div>
+                    <div class="divForm">
+                        <label for="telefono">Telefono:</label>
+                        <input type="number" name="telefono" placeholder="Ingresa tu telefono">
+                    </div>
+                    <div class="divForm">
+                        <label for="ciudad">Localidad</label>
+                        <select name="ciudad" id="">
+                            <option value="españa">Buenos Aires</option>
+                            <option value="brasil">Cordoba</option>
+                            <option value="argentina">Mar del Plata</option>
+                            <option value="estadosunidos">Rosario</option>
+                            <option value="alemania">Tandil</option>
+                            <option value="neuquen">Neuquen</option>
+                            <option value="mendoza">Mendoza</option>
+                        </select>
+                    </div>
+                    <div class="divForm">
+                        <label for="comentario">Dejanos tu comentario</label>
+                        <div>
+                            <textarea name="comentario" rows="4" cols="40" placeholder="Escriba algo"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="divForm">
+                        <button>
+                            <img src="../img/send.svg" alt="enviar" width="32" height="32"
+                                style="vertical-align: middle">
+                            Enviar
+                        </button>
+                        <button>
+                            <img src="../img/reset.svg" alt="borrar" width="32" height="32"
+                                style="vertical-align: middle">
+                            Borrar
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p><strong> JJ Giuria |</strong> Todos los derechos reservados.</p>
+            <div>
+                <ul class="redesSociales">
+                    <li><a href="https://es-la.facebook.com/trenogym/" target="_blank"><img width="40" height="40" src="../img/logoFace.png"
+                    alt=""></a></li>
+                    <li><a href="https://www.instagram.com/treno_gimnasio/" target="_blank"><img width="40" height="40" src="../img/intaLogo.png" alt=""></a></li>
+                    <li><a href="https://walink.co/cb0f80" target="_blank"><img width="40" height="40" src="../img/wpLogo.png" alt=""></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
