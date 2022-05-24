@@ -19,7 +19,7 @@
 }
 
 
-header{
+.classHeader{
     
     position: sticky;
     top: 0;
@@ -38,7 +38,7 @@ header{
     align-items: center;
 }
 
-header img{
+.headerImg{
     
     margin-left: 70px;
     width: 120px;
@@ -46,7 +46,7 @@ header img{
 }
 
 
-header h1{
+.headerH1{
     
     display: none;
 
@@ -58,7 +58,7 @@ header h1{
     font-size: 100px;
 }
 
-nav ul{
+.navUl{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,13 +90,13 @@ nav ul{
     background-color: rgb(0, 0, 0, 0.1  );
 }
 
-nav ul li a{
+.navUlLiA{
     text-decoration: none;
     /*color: #f17989;*/
     color: rgb(233, 184, 60);
 }
 
-main{
+.classMain{
     grid-area: main;
     
 
@@ -128,7 +128,7 @@ main{
     transform: scale(1.2);
 }
 
-footer{
+.classFooter{
     grid-area: footer;
 
     display: flex;
@@ -141,7 +141,7 @@ footer{
     background-color: #2A363B;
 }
 
-footer p{
+.footerP{
     font-size: 20px;
     color: #cb263c;
     text-shadow: 0.1px 0.1px 2px black;
@@ -281,6 +281,8 @@ footer p{
 }
 
 /* ESTILOS CONTACTOS */
+
+/**/
 .mainContacto1{ 
 
     
@@ -346,16 +348,16 @@ footer p{
 
 @media screen and (min-width:600px) {
 
-    header{
+    .classHeader{
         height: 20vh;
     }
 
-    nav ul{
+    .navUl{
         flex-direction: row;
         justify-content: space-between;
     }
 
-    footer{
+    .classFooter{
         height: 10vh;
         flex-direction: row;
         justify-content: space-between;
@@ -392,4 +394,10 @@ footer p{
     }
 
     
+}
+
+/*Con Bootstrap*/
+.imgLogo{
+    width: 100px;
+    height: 100px;
 }
