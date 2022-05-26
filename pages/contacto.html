@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Bt -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- Link CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Link Fuente del Menu-->
@@ -19,6 +22,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
+    <!-- Link fuente firma -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
     <title>Blog</title>
 </head>
@@ -26,17 +33,35 @@
 <body>
     <div class="contenedor">
         <header>
-            <a href="../index.html"><img class="imgIndex" src="../img/treno.png" alt="Logo de treno"></a>
-            <h1>TRENO</h1>
-            
-            <nav>
-                <ul>
-                    <li class="botonAnimation"><a href="../index.html">Inicio</a></li>
-                    <li class="botonAnimation"><a href="../pages/blog.html">Blog</a></li>
-                    <li class="botonAnimation"><a href="../pages/actividades.html">Actividades</a></li>
-                    <li class="botonAnimation"><a href="../pages/nosotros.html">Nosotros</a></li>
-                    <li class="botonAnimation">Contacto</li>
-                </ul>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid boton-nav">
+                    <a href="index.html"><img class="imgIndex" src="../img/treno.png" alt="Logo de treno"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto class-nav mb-2 mb-lg-0">
+
+                            <li class="nav-item">
+                                <a class="botonAnimation" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="botonAnimation" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="botonAnimation" href="actividades.html">Actividades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="botonAnimation" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="botonAnimation active" aria-current="page" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
 
@@ -46,7 +71,10 @@
                 <p class="formulario"><strong>Nuestro telfono:</strong> +54 9 2236691462</p>
                 <p class="formulario"><Strong>Nuestro E-mail:</Strong> treno.gym@gmail.com</p>
                 <legend class="legend">Direccion:</legend>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6289.368195002173!2d-57.557414!3d-37.984501!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d9576846afb7%3A0x13594050a82f4a24!2sSan%20Juan%20872%2C%20B7600BUR%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1652206686481!5m2!1ses-419!2sar" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6289.368195002173!2d-57.557414!3d-37.984501!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d9576846afb7%3A0x13594050a82f4a24!2sSan%20Juan%20872%2C%20B7600BUR%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1652206686481!5m2!1ses-419!2sar"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="mainContacto2">
                 <form class="formulario">
@@ -105,17 +133,27 @@
         </main>
 
         <footer>
-            <p><strong> JJ Giuria |</strong> Todos los derechos reservados.</p>
+            <div class="infoFooter">
+                <p class="nombreFooter"> Juan José Giuria </p>
+                <p class="copyright">Copyright © JJ Giuria inc.</p>
+            </div>
             <div>
                 <ul class="redesSociales">
-                    <li><a href="https://es-la.facebook.com/trenogym/" target="_blank"><img width="40" height="40" src="../img/logoFace.png"
-                    alt=""></a></li>
-                    <li><a href="https://www.instagram.com/treno_gimnasio/" target="_blank"><img width="40" height="40" src="../img/intaLogo.png" alt=""></a></li>
-                    <li><a href="https://walink.co/cb0f80" target="_blank"><img width="40" height="40" src="../img/wpLogo.png" alt=""></a></li>
+                    <li><a href="https://es-la.facebook.com/trenogym/" target="_blank"><img width="40" height="40"
+                                src="../img/logoFace.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/treno_gimnasio/" target="_blank"><img width="40" height="40"
+                                src="../img/intaLogo.png" alt=""></a></li>
+                    <li><a href="https://walink.co/cb0f80" target="_blank"><img width="40" height="40"
+                                src="../img/wpLogo.png" alt=""></a></li>
                 </ul>
             </div>
         </footer>
     </div>
+
+    <!-- Link js bt -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

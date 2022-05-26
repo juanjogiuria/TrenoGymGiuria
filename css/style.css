@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,19 +8,19 @@
 /*-------------------------------------------------------------*/
 /*------------   GRID DE INDEX.HTML   ----------------------*/
 /*-------------------------------------------------------------*/
-.contenedor{
+.contenedor {
     display: grid;
     height: 100vh;
 
     grid-template-areas: "header"
-                         "main "
-                         "footer ";
+        "main "
+        "footer ";
 
 }
 
 
-header{
-    
+header {
+
     position: sticky;
     top: 0;
     z-index: 1;
@@ -31,26 +31,36 @@ header{
     background-image: url("../img/fondoTitulo.png");
 
     background-color: #2A363B;
-    height: 30vh;
+    height: auto;
     padding: 15px;
-    
+
     justify-content: space-between;
     align-items: center;
 }
 
-header img{
-    
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-nav {
+    width: 100%;
+
+}
+
+header img {
+
     margin-left: 70px;
     width: 120px;
     height: 120x;
 }
 
 
-header h1{
-    
+header h1 {
+
     display: none;
 
-    color:black;
+    color: black;
     font-family: 'Righteous', cursive;
     /*-webkit-text-stroke: 0.1px #e8939ec1; */
     text-shadow: 1px 1px 2px white;
@@ -58,19 +68,24 @@ header h1{
     font-size: 100px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px;
+    padding: 5px;
     /*justify-content: center;*/
     flex-wrap: wrap;
 }
 
-.botonAnimation{
+
+
+
+.botonAnimation {
     list-style-type: none;
     text-transform: uppercase;
-    font-family: 'Josefin Sans', sans-serif;;
+    font-family: 'Josefin Sans', sans-serif;
+    ;
     font-weight: 600;
     font-size: 15px;
     text-shadow: 0.5px 0.5px 2px black;
@@ -80,27 +95,23 @@ nav ul{
     border-radius: 10px;
     /*box-shadow: 1px 1px rgb(119, 124, 143);*/
     box-shadow: 1px 1px rgb(246, 118, 72, 0.1);
-    color: #f56936;
+    color: rgb(233, 184, 60);
     margin: 3px;
     padding: 0.4rem;
-}
-
-.botonAnimation:hover{
-    transform: scale(1.1);
-    background-color: rgb(0, 0, 0, 0.1  );
-}
-
-nav ul li a{
     text-decoration: none;
-    /*color: #f17989;*/
-    color: rgb(233, 184, 60);
 }
 
-main{
-    grid-area: main;
-    
+.botonAnimation:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    background-color: rgb(0, 0, 0, 0.1);
+    color: #f56936;
+}
 
-    
+
+main {
+    grid-area: main;
+
     padding: 20px;
 
     background-image: url("../img/fondoMain3.jpg");
@@ -109,55 +120,74 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     background-color: #2A363B;
-    
+
 }
 
-.mainRow{
+.mainRow {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.mainColumn{
+.mainColumn {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.imagenMain:hover{
+.imagenMain:hover {
     transform: scale(1.2);
+    transition: 2s;
 }
 
-footer{
+footer {
     grid-area: footer;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-    height: 20vh;
-    padding: 10px;
+    height: auto;
+    padding: 1px;
     background-color: #2A363B;
 }
 
-footer p{
-    font-size: 20px;
-    color: #cb263c;
-    text-shadow: 0.1px 0.1px 2px black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.infoFooter{
+    text-align: center;
+    margin: 5px;
 }
 
+.nombreFooter{
+    
+    font-family: 'Lobster', cursive;
+    font-size: large;
+    font-weight: lighter;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 1px;
+    color:#ecb74e;
+    margin: 0px;
+}
 
-.redesSociales{
+.copyright{
+    
+    color: #5c5e5c;
+    font-size: 11px;
+}
+
+.redesSociales {
     display: flex;
-    margin: 10px;
     justify-content: center;
+    padding-left: 0px;
 }
 
-.redesSociales li{
+.redesSociales li {
     list-style-type: none;
     margin: 5px;
+    box-shadow: 1px 1px 9px rgb(36, 36, 36);
+}
+
+.redesSociales>li:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 
@@ -165,31 +195,31 @@ footer p{
 
 /* ESTILOS PROPIOS DE CADA HTML*/
 /* ESTILOS INDEX */
-.mainIndex{
+.mainIndex {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 70vh;
-    display:  flex;
+    display: flex;
     justify-content: center;
 }
 
 
 
-.fraseIndex{
+.fraseIndex {
     font-size: 30px;
     padding: 20px;
     color: #e8f536;
     font-family: 'K2D', sans-serif;
     margin-top: 10px;
     text-align: center;
-    
+
     text-shadow: 2px 2px 2px rgb(245, 6, 6);
     justify-self: end;
 }
 
 /* ESTILOS DEL BLOG */
-.mainBlog{
+.mainBlog {
 
     display: flex;
     flex-direction: column;
@@ -199,20 +229,20 @@ footer p{
     margin: 2px;
     padding: 30px;
 
-    
+
     color: white;
 
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.imagenBlog{
+.imagenBlog {
 
     height: 180px;
     width: 180px;
     margin-left: 25px;
 }
 
-.divBlog{
+.divBlog {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,20 +250,20 @@ footer p{
     text-align: center;
 }
 
-.tituloBlog{
+.tituloBlog {
     font-family: 'Zilla Slab Highlight', cursive;
     text-decoration: underline;
     color: #cb263c;
 }
 
-.pBlog{
+.pBlog {
     margin: 10px;
     font-family: 'K2D', sans-serif;
-    
+
 }
 
 /*ESTILOS ACTIVIDADES */
-.mainAct{
+.mainAct {
 
     display: flex;
     flex-direction: column;
@@ -243,18 +273,18 @@ footer p{
     margin: 2px;
     padding: 20px;
 
-    
+
     color: white;
 
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* ESTILOS DE NOSOTROS */
-.mainNosotros{
+.mainNosotros {
 
     margin: 30px;
     padding: 30px;
-    
+
 
     background-color: rgba(0, 0, 0, 0.7);
 
@@ -265,25 +295,26 @@ footer p{
 
 }
 
-.fotoPerfil{
+.fotoPerfil {
     width: 200px;
     height: 200px;
 }
 
-.datosPerfil{
-    
+.datosPerfil {
+
     text-align: center;
-    color:rgb(233, 184, 60);
+    color: rgb(233, 184, 60);
     font-size: 20px;
-    font-family: 'Secular One', sans-serif;;
+    font-family: 'Secular One', sans-serif;
+    ;
     text-shadow: 2px 2px 2px rgb(69, 68, 66);
     -webkit-text-stroke: 0.5px black;
 }
 
 /* ESTILOS CONTACTOS */
-.mainContacto1{ 
+.mainContacto1 {
 
-    
+
     margin: 2px;
 
 
@@ -298,9 +329,10 @@ footer p{
 
 
 }
-.mainContacto2{
 
-    
+.mainContacto2 {
+
+
     margin: 60px;
     padding: 25px;
 
@@ -308,14 +340,14 @@ footer p{
 
     color: white;
     text-align: center;
-    
+
     display: flex;
     flex-direction: column;
-    
+
 
 }
 
-.legend{
+.legend {
     margin: 1px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -325,18 +357,18 @@ footer p{
     color: #cb263c;
 }
 
-.formulario{
+.formulario {
     margin: 1px;
     display: flex;
     flex-direction: column;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.divForm{
+.divForm {
     margin: 5px;
 }
 
-.mapaTreno{
+.mapaTreno {
     margin: 10px;
     align-self: center;
 }
@@ -346,50 +378,50 @@ footer p{
 
 @media screen and (min-width:600px) {
 
-    header{
-        height: 20vh;
+    header {
+        height: auto;
     }
 
-    nav ul{
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    footer {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 
-    footer{
-        height: 10vh;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .mainBlog{
+    .mainBlog {
         flex-direction: row;
         justify-content: space-around;
     }
-    
-    .imagenBlog{
+
+    .imagenBlog {
         width: 250px;
         height: 250px;
     }
 
-    .mainAct{
+    .mainAct {
         flex-direction: row;
         justify-content: space-around;
     }
 
-    .mainColumn{
+    .mainColumn {
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
     }
 
-    .fotoPerfil{
+    .fotoPerfil {
         width: 300px;
         height: 300px;
     }
 
-    .datosPerfil{
+    .datosPerfil {
         font-size: 30px;
     }
 
-    
+
 }
