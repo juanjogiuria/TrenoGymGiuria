@@ -1,3 +1,5 @@
+@import "base/variables";
+
 * {
     margin: 0;
     padding: 0;
@@ -66,7 +68,7 @@
                                 border-radius: 10px;
                                 /* En la siguiente linea borre el 4to parametro de box shadow*/
                                 box-shadow: 1px 1px rgb(246, 118, 72);
-                                color: rgb(233, 184, 60);
+                                color: $color-fuente-principal;
                                 margin: 3px;
                                 padding: 0.4rem;
                                 text-decoration: none;
@@ -125,7 +127,7 @@
                 font-weight: lighter;
                 text-shadow: 2px 2px 5px black;
                 letter-spacing: 1px;
-                color: #ecb74e;
+                color: $color-fuente-principal;
                 margin: 0px;
             }
 
@@ -188,7 +190,7 @@
             .datosPerfil {
             
                 text-align: center;
-                color: rgb(233, 184, 60);
+                color: $color-fuente-principal;
                 font-size: 20px;
                 font-family: 'Secular One', sans-serif;
                 ;
@@ -286,7 +288,7 @@
         width: 100%;
         margin: 2px;
         padding: 30px;
-        color: white;
+        color: $color-fuente-principal;
         background-color: rgba(0, 0, 0, 0.7);
         .imagenBlog {
 
@@ -327,7 +329,7 @@
         padding: 20px;
 
 
-        color: white;
+        color: $color-fuente-principal;
 
         background-color: rgba(0, 0, 0, 0.7);
         .imagenAct {
