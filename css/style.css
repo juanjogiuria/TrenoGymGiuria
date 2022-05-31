@@ -46,11 +46,11 @@
         margin: 3px;
         padding: 0.4rem;
         text-decoration: none; }
-      .contenedor header nav div div ul li .botonAnimation:hover {
-        transform: scale(1.1);
-        transition: 0.4s;
-        background-color: black;
-        color: #f56936; }
+        .contenedor header nav div div ul li .botonAnimation:hover {
+          transform: scale(1.1);
+          transition: 0.4s;
+          background-color: black;
+          color: #f56936; }
     .contenedor header img {
       margin-left: 70px;
       width: 120px;
@@ -93,9 +93,9 @@
         list-style-type: none;
         margin: 5px;
         box-shadow: 1px 1px 9px #242424; }
-    .contenedor footer div .redesSociales > li:hover {
-      transform: scale(1.2);
-      transition: 0.3s; }
+        .contenedor footer div .redesSociales li:hover {
+          transform: scale(1.2);
+          transition: 0.3s; }
   .contenedor .mainRow {
     display: flex;
     align-items: center;
