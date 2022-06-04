@@ -1,0 +1,42 @@
+@import "../base/mixin";
+@import "../base/extend";
+
+.mainAct {
+
+    @include flexColumn;
+    align-content: space-around;
+    
+    width: 100%;
+    margin: 2px;
+    padding: 20px;
+
+
+    color: $color-fuente-principal;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .imagenAct {
+
+        height: 180px;
+        width: 180px;
+        margin-left: 25px;
+    }
+
+    .divAct {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+
+        .tituloAct {
+            @extend %estiloTitulo;
+        }
+
+        .pAct {
+            margin: 10px;
+            @extend %estiloTexto;
+
+        }
+    }
+}

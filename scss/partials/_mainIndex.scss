@@ -1,0 +1,14 @@
+@import "../base/mixin";
+
+.mainIndex {
+    @include flexColumn;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+
+    .imagenMain:hover {
+        transform: scale(1.2);
+        transition: 2s;
+    }
+
+}

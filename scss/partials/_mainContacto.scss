@@ -1,0 +1,65 @@
+@import "../base/mixin";
+@import "../base/extend";
+
+.mainContacto {
+    @include flexColumn;
+
+    .mainInfo {
+
+
+        margin: 2px;
+
+
+        background-color: rgba(0, 0, 0, 0.7);
+
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .legend {
+            @extend %estiloTitulo;
+        }
+
+        .formulario {
+            margin: 1px;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            color: white;
+        }
+
+    }
+
+    .mainForm {
+
+        padding: 10px;
+
+        background-color: rgba(0, 0, 0, 0.7);
+
+        color: white;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+
+        .legend {
+            @extend %estiloTitulo;
+        }
+
+        .formulario {
+            margin: 1px;
+            display: flex;
+            flex-direction: column;
+            @extend %estiloTexto;
+
+            .divForm {
+                margin: 5px;
+            }
+        }
+
+
+    }
+}
