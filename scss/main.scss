@@ -41,12 +41,14 @@
 
                     ul {
                         @include flexColumn;
-                        margin: 10px;
+                        margin: 5px;
                         padding: 5px;
                         flex-wrap: wrap;
 
                         li {
+                            margin: 5px;
                             .botonAnimation {
+                                
                                 list-style-type: none;
                                 text-transform: uppercase;
                                 font-family: 'Josefin Sans', sans-serif;

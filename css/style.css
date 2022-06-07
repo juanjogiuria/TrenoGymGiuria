@@ -27,29 +27,31 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 10px;
+      margin: 5px;
       padding: 5px;
       flex-wrap: wrap; }
-      .contenedor header nav div div ul li .botonAnimation {
-        list-style-type: none;
-        text-transform: uppercase;
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: 600;
-        font-size: 15px;
-        text-shadow: 0.5px 0.5px 2px black;
-        background-color: transparent;
-        border-radius: 10px;
-        /* En la siguiente linea borre el 4to parametro de box shadow*/
-        box-shadow: 1px 1px #f67648;
-        color: #FFCC29;
-        margin: 3px;
-        padding: 0.4rem;
-        text-decoration: none; }
-        .contenedor header nav div div ul li .botonAnimation:hover {
-          transform: scale(1.1);
-          transition: 0.4s;
-          background-color: black;
-          color: #f56936; }
+      .contenedor header nav div div ul li {
+        margin: 5px; }
+        .contenedor header nav div div ul li .botonAnimation {
+          list-style-type: none;
+          text-transform: uppercase;
+          font-family: 'Josefin Sans', sans-serif;
+          font-weight: 600;
+          font-size: 15px;
+          text-shadow: 0.5px 0.5px 2px black;
+          background-color: transparent;
+          border-radius: 10px;
+          /* En la siguiente linea borre el 4to parametro de box shadow*/
+          box-shadow: 1px 1px #f67648;
+          color: #FFCC29;
+          margin: 3px;
+          padding: 0.4rem;
+          text-decoration: none; }
+          .contenedor header nav div div ul li .botonAnimation:hover {
+            transform: scale(1.1);
+            transition: 0.4s;
+            background-color: black;
+            color: #f56936; }
     .contenedor header img {
       margin-left: 70px;
       width: 120px;
@@ -109,7 +111,8 @@
   .contenedor .mainBlog .divBlog .tituloBlog, .contenedor .mainAct .divAct .tituloAct, .contenedor .mainNosotros div .datosPerfil, .contenedor .mainContacto .mainInfo .legend, .contenedor .mainContacto .mainForm .legend {
     font-family: 'Francois One', sans-serif;
     text-transform: uppercase;
-    color: #cb263c; }
+    color: #cb263c;
+    text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.495); }
   .contenedor .mainBlog .divBlog .pBlog, .contenedor .mainAct .divAct .pAct, .contenedor .mainContacto .mainForm .formulario {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
@@ -138,7 +141,8 @@
   .contenedor .mainBlog .divBlog .tituloBlog, .contenedor .mainAct .divAct .tituloAct, .contenedor .mainNosotros div .datosPerfil, .contenedor .mainContacto .mainInfo .legend, .contenedor .mainContacto .mainForm .legend {
     font-family: 'Francois One', sans-serif;
     text-transform: uppercase;
-    color: #cb263c; }
+    color: #cb263c;
+    text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.495); }
   .contenedor .mainBlog .divBlog .pBlog, .contenedor .mainAct .divAct .pAct, .contenedor .mainContacto .mainForm .formulario {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
@@ -189,7 +193,8 @@
   .contenedor .mainBlog .divBlog .tituloBlog, .contenedor .mainAct .divAct .tituloAct, .contenedor .mainNosotros div .datosPerfil, .contenedor .mainContacto .mainInfo .legend, .contenedor .mainContacto .mainForm .legend {
     font-family: 'Francois One', sans-serif;
     text-transform: uppercase;
-    color: #cb263c; }
+    color: #cb263c;
+    text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.495); }
   .contenedor .mainBlog .divBlog .pBlog, .contenedor .mainAct .divAct .pAct, .contenedor .mainContacto .mainForm .formulario {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
