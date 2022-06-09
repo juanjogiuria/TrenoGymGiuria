@@ -47,30 +47,34 @@
 
                         li {
                             margin: 5px;
+
                             .botonAnimation {
-                                
+
                                 list-style-type: none;
                                 text-transform: uppercase;
                                 font-family: 'Josefin Sans', sans-serif;
-                                ;
                                 font-weight: 600;
                                 font-size: 15px;
                                 text-shadow: 0.5px 0.5px 2px black;
-
                                 background-color: transparent;
-                                border-radius: 10px;
+                                border-radius: 5px;
                                 /* En la siguiente linea borre el 4to parametro de box shadow*/
-                                box-shadow: 1px 1px rgb(246, 118, 72);
-                                color: $color-fuente-principal;
+                                color: #FFCC29;
                                 margin: 3px;
-                                padding: 0.4rem;
+                                padding: 0.3rem;
                                 text-decoration: none;
 
                                 &:hover {
-                                    transform: scale(1.1);
-                                    transition: 0.4s;
-                                    background-color: rgb(0, 0, 0);
-                                    color: #f56936;
+                                    color: #FFCC29 !important;
+                                    text-shadow: 0.5px 0.5px 2px black;
+                                    font-weight: 600;
+                                    font-size: 17px;
+                                    padding: 0.5em 1.2em;
+                                    background: rgba(0, 0, 0, 0);
+                                    border: 2px solid;
+                                    border-color: #FFCC29;
+                                    transition: all 0.5s ease;
+                                    position: relative;
                                 }
                             }
                         }
@@ -166,10 +170,13 @@
         header {
             height: auto;
 
+            
+
             nav {
                 ul {
                     flex-direction: row;
                     justify-content: flex-end;
+
                 }
             }
         }
@@ -215,7 +222,7 @@
             }
         }
 
-        .mainContacto{
+        .mainContacto {
             @include flexRow;
         }
 
