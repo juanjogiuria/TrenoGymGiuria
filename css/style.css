@@ -167,6 +167,7 @@
     color: white; }
   .contenedor .flexBlog {
     display: flex;
+    height: auto;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
@@ -174,7 +175,6 @@
     background-image: url("../img/fondoBlog2.png"); }
     .contenedor .flexBlog .mainBlog {
       display: grid;
-      height: auto;
       grid-template-areas: "titulo" "img" "parrafo" "boton";
       width: 80%;
       margin: 8px;
@@ -191,6 +191,7 @@
         padding-top: 2px; }
       .contenedor .flexBlog .mainBlog .pBlog {
         grid-area: parrafo;
+        overflow: hidden;
         margin: 10px;
         text-align: center;
         font-size: 0.8rem; }
@@ -380,7 +381,77 @@
         .contenedor .mainContacto .mainForm .formulario .divForm {
           margin: 5px; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
+  .contenedor header {
+    height: auto; }
+    .contenedor header nav ul {
+      flex-direction: row;
+      justify-content: flex-end; }
+  .contenedor .mainIndex {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "img bv" " img h1" "img parrafo"; }
+    .contenedor .mainIndex .imagenMain {
+      margin-right: 5px;
+      justify-self: end; }
+    .contenedor .mainIndex .bienvenidos {
+      height: 1.5rem;
+      width: 160px;
+      font-size: 1.2rem;
+      justify-self: start; }
+    .contenedor .mainIndex .tituloMain {
+      display: block; }
+    .contenedor .mainIndex .parrafoIndex {
+      margin: 0;
+      padding: 5px;
+      width: 90%;
+      justify-self: start;
+      text-align: start; }
+  .contenedor .flexBlog {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url("../img/fondoBlog.png"); }
+    .contenedor .flexBlog .mainBlog {
+      width: 40%;
+      height: 500px;
+      align-items: center; }
+      .contenedor .flexBlog .mainBlog .pBlog {
+        font-size: 0.5rem; }
+  .contenedor .flexAct {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url("../img/fondoBlog.png"); }
+    .contenedor .flexAct .mainAct {
+      width: 40%;
+      align-items: center; }
+      .contenedor .flexAct .mainAct .horarios .legendH {
+        font-size: 17px; }
+      .contenedor .flexAct .mainAct .horarios .dias {
+        font-size: 15px; }
+      .contenedor .flexAct .mainAct .horarios .horas {
+        font-size: 18px; }
+  .contenedor .mainNosotros {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .contenedor .mainNosotros .tarjeta {
+      width: 30%; }
+  .contenedor .mainContacto .mainInfo {
+    width: 60%; }
+    .contenedor .mainContacto .mainInfo .map {
+      align-self: center;
+      height: 300px;
+      width: 60%; }
+  .contenedor .mainContacto .mainForm {
+    width: 60%; }
+    .contenedor .mainContacto .mainForm div textarea {
+      width: 50%;
+      height: 100px; } }
+
+@media screen and (min-width: 1024px) {
   .contenedor header {
     height: auto; }
     .contenedor header nav ul {
@@ -421,6 +492,8 @@
       width: 40%;
       height: 300px;
       align-items: center; }
+      .contenedor .flexBlog .mainBlog .pBlog {
+        font-size: 0.6rem; }
   .contenedor .flexAct {
     background-image: url("../img/fondoBlog.png"); }
     .contenedor .flexAct .mainAct {

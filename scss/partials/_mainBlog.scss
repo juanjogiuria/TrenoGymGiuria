@@ -5,6 +5,7 @@
 .flexBlog {
 
     display: flex;
+    height: auto;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
@@ -16,7 +17,6 @@
     .mainBlog {
 
         display: grid;
-        height: auto;
         grid-template-areas: "titulo"
             "img"
             "parrafo"
@@ -42,6 +42,7 @@
 
         .pBlog {
             grid-area: parrafo;
+            overflow: hidden;
             margin: 10px;
             @extend %estiloTexto;
             text-align: center;
