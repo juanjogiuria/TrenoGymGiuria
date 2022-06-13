@@ -6,9 +6,7 @@
 .contenedor {
   display: grid;
   height: 100vh;
-  grid-template-areas: "header"
- "main "
- "footer "; }
+  grid-template-areas: "header" "main " "footer "; }
   .contenedor header {
     position: sticky;
     top: 0;
@@ -54,7 +52,7 @@
             font-weight: 600;
             font-size: 17px;
             padding: 0.5em 1.2em;
-            background: rgba(0, 0, 0, 0.2);
+            background: rgba(0, 0, 0, 0);
             border: 2px solid;
             border-color: #FFCC29;
             transition: all 0.5s ease;
