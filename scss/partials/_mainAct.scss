@@ -1,42 +1,110 @@
 @import "../base/mixin";
 @import "../base/extend";
 
-.mainAct {
 
-    @include flexColumn;
-    align-content: space-around;
-    
-    width: 100%;
-    margin: 2px;
-    padding: 20px;
+.flexAct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    background-image: url("../img/fondoBlog2.png");
 
 
-    color: $color-fuente-principal;
+    .mainAct {
 
-    background-color: rgba(0, 0, 0, 0.7);
+        display: grid;
+        grid-template-areas: "titulo"
+            "profe"
+            "img"
+            "parrafo"
+            "horarios";
 
-    .imagenAct {
+        width: 80%;
+        margin: 15px;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 0 6px $color-fuente-secundario, inset 0 0 6px $color-fuente-principal;
 
-        height: 180px;
-        width: 180px;
-        margin-left: 25px;
-    }
-
-    .divAct {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        text-align: center;
+        .imagenAct {
+            grid-area: img;
+            height: 100%;
+            width: 100%;
+        }
 
         .tituloAct {
+            grid-area: titulo;
             @extend %estiloTitulo;
+            margin: 0;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .profe {
+            grid-area: profe;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "legend profe";
+
+            legend {
+                grid-area: legend;
+                text-align: end;
+                @extend %estiloTexto;
+                font-size: 12px;
+            }
+
+            p {
+                grid-area: profe;
+                color: $color-fuente-principal;
+                text-align: start;
+                font-size: 12px;
+            }
+
         }
 
         .pAct {
+
+            grid-area: parrafo;
             margin: 10px;
             @extend %estiloTexto;
+            text-align: center;
+            font-size: 12px;
 
         }
+
+        .horarios {
+            grid-area: horarios;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .legendH{
+                @extend %estiloTitulo;
+                font-size: 13px;
+                margin: 0px;
+            }
+
+            .dias{
+                color: $color-fuente-principal;
+                margin: 0px;
+            }
+
+            .horas{
+                @extend %estiloTexto;
+                font-style: normal;
+                font-size: 14px;
+            }
+        }
+
+        &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+        background-color: black;
+        box-shadow: 0 0 5px $color-fuente-secundario, inset 0 0 5px $color-fuente-secundario;
     }
+    }
+
+    
 }

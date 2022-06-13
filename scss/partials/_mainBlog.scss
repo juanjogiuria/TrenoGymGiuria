@@ -2,7 +2,7 @@
 @import "../base/extend";
 
 
-.flexMain {
+.flexBlog {
 
     display: flex;
     flex-direction: column;
@@ -23,7 +23,6 @@
             "boton";
         width: 80%;
         margin: 8px;
-        justify-content: center;
         background-color: rgba(0, 0, 0, 0.7);
         box-shadow: 0 0 6px $color-fuente-secundario, inset 0 0 6px $color-fuente-principal;
 

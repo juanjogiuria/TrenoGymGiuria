@@ -18,6 +18,7 @@
         "footer ";
 
     header {
+        width: 100%;
         position: sticky;
         top: 0;
         z-index: 1;
@@ -26,20 +27,19 @@
         height: auto;
         background: rgb(0, 0, 0);
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.9363095580028886) 32%, rgba(0, 0, 0, 1) 90%);
-        margin: 15  px;
+        margin-top: 15px;
         padding: 15px;
         justify-content: space-between;
         align-items: center;
 
         .navbar {
             width: 100%;
-            height: 80px;
+            height: auto;
             --bs-navbar-toggler-border-color: rgba(255, 205, 41, 0.87);
             --bs-navbar-color: rgba(255, 205, 41, 0.2);
         }
 
         img {
-            margin-left: 70px;
             width: 80px;
             height: 80px;
         }
@@ -230,7 +230,7 @@
 
         }
 
-        .flexMain {
+        .flexBlog {
 
             flex-direction: row;
             flex-wrap: wrap;
@@ -251,33 +251,71 @@
             }
         }
 
-        .mainAct {
-            flex-direction: row;
-            justify-content: space-around;
+        .flexAct{
 
-            .imagenAct {
-                width: 250px;
-                height: 250px;
+            
+            background-image: url("../img/fondoBlog.png");
+
+            .mainAct{
+                grid-template-areas: "img titulo horarios"
+                                     "img profe horarios"
+                                     "img parrafo horarios";
+
+            
+                width: 80%;
+                align-items: center;
+
+                .horarios{
+                    transform: rotate(90deg);
+                    justify-self: start;
+
+                    .legendH{
+                        font-size: 17px;
+                    }
+
+                    .dias{
+                        font-size: 15px;
+                    }
+
+                    .horas{
+                        font-size: 18px;
+                    }
+                }
             }
+            
+
         }
 
         .mainNosotros {
             @include flexRow;
 
-            div {
-                .fotoPerfil {
-                    width: 300px;
-                    height: 300px;
-                }
-
-                .datosPerfil {
-                    font-size: 30px;
-                }
+            .tarjeta {     
+                width: 30%;
+                
             }
         }
 
-        .mainContacto {
-            @include flexRow;
+        .mainContacto{
+            .mainInfo{
+                width: 60%;
+
+                .map{
+                    align-self: center;
+                    height: 300px;
+                    width: 60%;
+                }
+            }
+
+            .mainForm{
+                width: 60%;
+
+                div{
+                    textarea{
+                        width: 50%;
+                        height: 100px;
+                    }
+                }
+            }
         }
 
     }
