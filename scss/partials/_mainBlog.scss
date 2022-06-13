@@ -1,36 +1,94 @@
 @import "../base/mixin";
 @import "../base/extend";
 
-.mainBlog {
 
-    @include flexColumn;
-    align-content: space-around;
-    width: 100%;
-    margin: 2px;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.7);
+.flexMain {
 
-    .imagenBlog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    background-image: url("../img/fondoBlog2.png");
 
-        height: 180px;
-        width: 180px;
-        margin-left: 25px;
-    }
 
-    .divBlog {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        text-align: center;
+    .mainBlog {
+
+        display: grid;
+        height: auto;
+        grid-template-areas: "titulo"
+            "img"
+            "parrafo"
+            "boton";
+        width: 80%;
+        margin: 8px;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 0 6px $color-fuente-secundario, inset 0 0 6px $color-fuente-principal;
+
+        .imagenBlog {
+            grid-area: img;
+            height: 100%;
+            width: 100%;
+        }
 
         .tituloBlog {
+            grid-area: titulo;
             @extend %estiloTitulo;
+            font-size: 17px;
+            text-align: center;
+            padding-top: 2px;
         }
 
         .pBlog {
+            grid-area: parrafo;
             margin: 10px;
             @extend %estiloTexto;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        .seguirLeyendo{
+            grid-area: boton;
+            height: 30px;
+            width: 100px;
+            justify-self: center;
+            padding-left: 4px;
+            padding-right: 4px;
+            background-color: transparent;
+            border: 2px solid $color-fuente-principal;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            
+            a{
+                text-decoration: none;
+                color: $color-fuente-secundario;
+                font-size: 10px;
+                text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.696);
+
+            }
+
+            &:hover{
+                
+                transform: scale(1.1);
+                background-color: $color-fuente-principal;
+                box-shadow: 0 0 5px $color-fuente-principal;
+                a{
+                    color: black;
+                }
+             }
+        }
+
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+            background-color: black;
+            box-shadow: 0 0 5px $color-fuente-secundario, inset 0 0 5px $color-fuente-secundario;
         }
     }
 }

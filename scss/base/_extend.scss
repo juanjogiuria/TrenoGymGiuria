@@ -7,6 +7,11 @@
 
 %estiloTexto {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 14px;
+    font-style: italic;
     color: white;
+}
+
+%colorFondoDegrade{
+    background: rgb(148,26,29);
+    background: linear-gradient(90deg, rgba(148,26,29,1) 0%, #353b3d 66%);
 }
