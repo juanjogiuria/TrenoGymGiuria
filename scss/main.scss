@@ -6,14 +6,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .contenedor {
     display: grid;
-    height: 100%;
+    min-height: 100vh;
     background-color: black;
 
     grid-template-areas: "header"
+        "section"
         "main "
         "footer ";
 
@@ -42,6 +44,11 @@
         img {
             width: 80px;
             height: 80px;
+
+            &:hover {
+                transform: scale(0.9);
+                transition: 0.3s;
+            }
         }
 
         nav {
@@ -97,6 +104,31 @@
 
 
 
+    }
+
+    section {
+
+        width: 83%;
+        justify-self: center;
+
+        border-top: 1px solid #cb263caa;
+        border-bottom: 1px solid #cb263caa;
+
+        h1 {
+
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 900;
+            font-size: 20px;
+            text-shadow: 0 0 3px #ffcd29ab;
+            background-color: transparent;
+            border-radius: 5px;
+            color: $color-fuente-principal;
+            margin: 3px;
+            padding: 0.3rem;
+            text-decoration: none;
+        }
     }
 
     main {
@@ -175,6 +207,3 @@
 
 @import "partials/querie768px";
 @import "partials/querie1024px";
-
-
-

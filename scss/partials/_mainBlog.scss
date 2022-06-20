@@ -14,14 +14,17 @@
     background-image: url("../img/fondoBlog2.png");
 
 
+
+
     .mainBlog {
 
         display: grid;
-        grid-template-areas: "titulo"
+        grid-template-areas:
+            "titulo"
             "img"
             "parrafo"
             "boton";
-        width: 80%;
+        width: 95%;
         margin: 8px;
         background-color: rgba(0, 0, 0, 0.7);
         box-shadow: 0 0 6px $color-fuente-secundario, inset 0 0 6px $color-fuente-principal;

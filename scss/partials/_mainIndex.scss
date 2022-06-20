@@ -17,16 +17,11 @@
         justify-self: center;
     }
 
-    /*.imagenMain:hover {
-        transform: scale(1.5);
-        transition: 5s;
-    }*/
-
     .bienvenidos{
         grid-area: bv;
         height: auto;
         font-family: "ITC Bolt Bold", serif;
-        color: $color-fuente-secundario;
+        color: #F46C32;
         text-shadow: 0 0 10px rgba(86, 86, 86, 0.805);
         font-size: 1.7rem;
         align-self: center;
