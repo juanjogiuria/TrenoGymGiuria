@@ -19,11 +19,12 @@
 
     .bienvenidos{
         grid-area: bv;
+        background-color: rgba(0, 0, 0, 0.479);
         height: auto;
         font-family: "ITC Bolt Bold", serif;
         color: #F46C32;
-        text-shadow: 0 0 10px rgba(86, 86, 86, 0.805);
-        font-size: 1.7rem;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.805);
+        font-size: 1.5rem;
         align-self: center;
         justify-self: center;
     }

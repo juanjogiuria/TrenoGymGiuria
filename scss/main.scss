@@ -2,6 +2,8 @@
 @import "base/mixin";
 @import "base/fonts";
 
+
+/*Reset*/
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@
 
 }
 
+/*Estilos generales y estructura de la pagina*/
 .contenedor {
     display: grid;
     min-height: 100vh;
@@ -19,6 +22,7 @@
         "main "
         "footer ";
 
+    /*Estilos del header*/
     header {
         width: 100%;
         position: sticky;
@@ -50,7 +54,7 @@
                 transition: 0.3s;
             }
         }
-
+        /*Estilos del nav*/
         nav {
             div {
                 div {
@@ -106,6 +110,7 @@
 
     }
 
+    /* Estilos de section*/
     section {
 
         width: 83%;
@@ -130,7 +135,7 @@
             text-decoration: none;
         }
     }
-
+    /*Estilos generales del main*/
     main {
         grid-area: main;
         padding: 20px;
@@ -142,6 +147,7 @@
         background-color: black;
     }
 
+    /*Estilos del footer*/
     footer {
         grid-area: footer;
         @include flexColumn;
@@ -192,6 +198,8 @@
 
         }
     }
+
+    /* Importo cada main de cada html */
 
     @import "partials/mainIndex";
 
